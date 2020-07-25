@@ -51,6 +51,9 @@ export default function Home({ repoURL }) {
 				.package-manager.sileo::before {
 					background-image: url('/assets/package-managers/Sileo.png');
 				}
+				.package-manager.installer5::before {
+					background-image: url('/assets/package-managers/Installer5.png');
+				}
 
 				.input-container {
 					width: 320px;
@@ -88,17 +91,20 @@ export default function Home({ repoURL }) {
 
 			<h1>{repoName}</h1>
 
-			<a
-				href={`cydia://url/https://cydia.saurik.com/api/share#?source=${repoURL}`}
-				className="package-manager cydia"
-			>
+			<a href={`cydia://url/https://cydia.saurik.com/api/share#?source=${repoURL}`} className="package-manager cydia">
 				<span>Add to Cydia</span>
 			</a>
+
 			<a href={`zbra://sources/add/${repoURL}`} className="package-manager zebra">
 				<span>Add to Zebra</span>
 			</a>
+
 			<a href={`sileo://source/${repoURL}`} className="package-manager sileo">
 				<span>Add to Sileo</span>
+			</a>
+
+			<a href={`installer://add/repo=${repoURL}`} className="package-manager installer5">
+				<span>Add to Installer</span>
 			</a>
 			{/* <a href={`installer://add/repo=${repoURL}`}>Add to Installer</a> */}
 
