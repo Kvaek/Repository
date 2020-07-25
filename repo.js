@@ -7,6 +7,6 @@ exports.packages = [
 ]
 
 exports.icons = {
-	Smuggle: 'assets/smuggle/icon.png',
-	Resonance: 'assets/resonance/icon.png',
+	smuggle: 'assets/smuggle/icon.png',
+	resonance: 'assets/resonance/icon.png',
 }
