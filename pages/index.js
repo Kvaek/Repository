@@ -103,7 +103,7 @@ export default function Home({ repoURL }) {
 				<span>Add to Sileo</span>
 			</a>
 
-			<a href={`installer://add/repo=${repoURL}`} className="package-manager installer5">
+			<a href={`installer://add/${repoURL}`} className="package-manager installer5">
 				<span>Add to Installer</span>
 			</a>
 			{/* <a href={`installer://add/repo=${repoURL}`}>Add to Installer</a> */}
